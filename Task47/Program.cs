@@ -5,7 +5,7 @@
 // 8 7,8 -7,1 9
 
 
-double[,] CreateMatrixRndInt(int rows, int columns)
+double[,] CreateMatrixRndDoub(int rows, int columns)
 {
     double[,] matrix = new double[rows, columns];
     for (int i = 0; i < matrix.GetLength(0); i++)
@@ -32,5 +32,5 @@ void PrintMatrix(double[,] matrix)
     }
 }
 
-double[,] array2D = CreateMatrixRndInt(3, 4);
+double[,] array2D = CreateMatrixRndDoub(3, 4);
 PrintMatrix(array2D);
